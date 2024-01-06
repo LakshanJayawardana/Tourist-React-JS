@@ -82,8 +82,8 @@ const Header = () => {
                   Contact
                 </NavLink>
               </div>
-              <NavLink to="/" className="btn btn-primary rounded-pill py-2 px-4">
-                Register
+              <NavLink to="/account" className="btn btn-primary rounded-pill py-2 px-4">
+              My Account
               </NavLink>
             </div>
           </nav>

@@ -445,6 +445,12 @@
 .h-45{
   height: 45px !important;
 }
+.w-50{
+  height: 50px !important;
+}
+.h-50{
+  height: 50px !important;
+}
 .mw-400{
   max-width: 400px !important;
 }
