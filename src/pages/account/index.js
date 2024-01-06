@@ -1,18 +1,21 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import HeroAccount from './HeroAccount';
+import OurServices from '../../components/OurServices';
+import Packages from '../../components/Packages';
 
-const Account = ({user, setUser}) => {
-    const navigate = useNavigate();
+const Account = ({ user }) => {
+  const navigate = useNavigate();
   const [logout, setLogout] = useState(false);
 
+  useEffect(() => {}, [user]);
 
   const handleLogout = () => {
     setLogout(true);
   };
 
   if (logout) {
-    navigate("/login");
+    navigate('/login');
   }
 
   return (
@@ -20,14 +23,30 @@ const Account = ({user, setUser}) => {
       <HeroAccount />
 
       {user ? (
-        <div className="container">
-          <h2>Welcome, {user.name}!</h2>
-          <p>Email: {user.email}</p>
-          <button className="btn btn-primary" onClick={handleLogout}>Logout</button>
+        <>
+        <div className="container mt-5">
+          <div className="card mx-auto" style={{ maxWidth: '400px' }}>
+            <div className="card-header">
+              <h3 className="card-title text-center">Welcome, {user.username}!</h3>
+            </div>
+            <div className="card-body">
+              <p className="card-text">
+                <strong>Email:</strong> {user.email}
+              </p>
+              <button className="btn btn-primary w-100" onClick={handleLogout}>
+                Logout
+              </button>
+            </div>
+          </div>
         </div>
-      ) : navigate("/login")}
+        <OurServices />
+        <Packages />
+        </>
+      ) : (
+        navigate('/register')
+      )}
     </>
   );
-}
+};
 
 export default Account;

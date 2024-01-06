@@ -472,3 +472,10 @@
 .text-primary{
   color: #86B817 !important;
 }
+
+.hire-now-heading {
+  text-align: center;
+  color: #86B817;
+  padding-bottom: 50px;
+}
+

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Booking = () => {
   return (
@@ -17,9 +18,9 @@ const Booking = () => {
                 Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat
                 ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
               </p>
-              <a className="btn btn-outline-light py-3 px-5 mt-2" href="">
+              <Link className="btn btn-outline-light py-3 px-5 mt-2" to={"/service"}>
                 Read More
-              </a>
+              </Link>
             </div>
             <div className="col-md-6">
               <h1 className="text-white mb-4">Book A Tour</h1>
@@ -53,11 +54,11 @@ const Booking = () => {
                   <div className="col-md-6">
                     <div className="form-floating">
                       <select className="form-select" id="select1">
-                        <option value="1">Destination 1</option>
-                        <option value="2">Destination 2</option>
-                        <option value="3">Destination 3</option>
+                        <option value="1">Dhaka</option>
+                        <option value="2">Cox's Bazar</option>
+                        <option value="3">Sundarbans</option>
                       </select>
-                      <label htmlFor="select1">Destination</label>
+                      <label htmlFor="select1">Select a place</label>
                     </div>
                   </div>
                   <div className="col-12">

@@ -3,15 +3,15 @@ import { useNavigate } from 'react-router-dom';
 import HeroAccount from './HeroAccount';
 
 
-const RegisterPage = ({setUser}) => {
+const RegisterPage = ({setUser,}) => {
     const navigate = useNavigate();
 
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState([{
     username: '',
     email: '',
     password: '',
     confirmPassword: '',
-  });
+  }]);
 
   const { username, email, password, confirmPassword } = formData;
 
@@ -22,7 +22,7 @@ const RegisterPage = ({setUser}) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
-    setUser(formData);
+    setUser(...formData);
     navigate('/account');
 };
 

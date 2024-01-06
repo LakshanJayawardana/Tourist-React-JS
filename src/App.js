@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import './App.css';
 import Footer from './layout/Footer';
@@ -13,43 +13,55 @@ import Account from './pages/account';
 import LoginPage from './pages/account/LoginPage';
 import RegisterPage from './pages/account/RegisterPage';
 
-function App() {
-  const [loading, setLoading] = useState(true);
+function ScrollToTop() {
+  const { pathname } = useLocation();
 
   useEffect(() => {
-    // Simulating a delay of 2 seconds before hiding the spinner
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
+function App() {
+  const [loading, setLoading] = useState(true);
+  const [user, setUser] = useState({
+    username: 'admin',
+    email: 'admin@example.com',
+    password: 'admin',
+    confirmPassword: 'admin',
+  });
+
+  useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
 
-
-
-  const [user, setUser] = useState(null);
-
   return (
     <BrowserRouter>
-
       {loading ? (
         <Loading />
       ) : (
         <>
-          <Header />
+          <Header user={user} />
           <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/service' element={<Services />} />
-            <Route path='/package' element={<AllPackages />} />
-            <Route path='/contact' element={<ContactPage />} />
-            
-            <Route path='/account' element={<Account user={user} setUser={setUser} />} />
-            
-            <Route path='/login' element={<LoginPage user={user} />} />
-            
-            <Route path='/register' element={<RegisterPage setUser={setUser}/>} />
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/service" element={<Services />} />
+            <Route path="/package" element={<AllPackages />} />
+            <Route path="/contact" element={<ContactPage />} />
+
+            <Route path="/account" element={<Account user={user} setUser={setUser} />} />
+
+            <Route path="/login" element={<LoginPage user={user} />} />
+
+            <Route path="/register" element={<RegisterPage setUser={setUser} />} />
           </Routes>
+
+          <ScrollToTop />
 
           <Footer />
         </>

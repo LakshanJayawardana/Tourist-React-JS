@@ -10,9 +10,7 @@ const HeroAccount = () => {
               <h1 className="display-3 text-white animated slideInDown">My Account</h1>
               <nav aria-label="breadcrumb">
                 <ol className="breadcrumb justify-content-center">
-                 
                 <li className="breadcrumb-item"><Link to={"/login"}>Login</Link></li>
-                  
                   <li className="breadcrumb-item"><Link to={"/register"}>Register</Link></li>
                 </ol>
               </nav>

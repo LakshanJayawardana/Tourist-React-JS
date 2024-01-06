@@ -1,6 +1,7 @@
 import React from 'react'
 
 import about from '../img/about.jpg'
+import { Link } from 'react-router-dom'
 
 const AboutUs = () => {
   return (
@@ -38,7 +39,7 @@ const AboutUs = () => {
                             <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2"></i>24/7 Service</p>
                         </div>
                     </div>
-                    <a className="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+                    <Link className="btn btn-primary py-3 px-5 mt-2" to={'/about'}>Read More</Link>
                 </div>
             </div>
         </div>

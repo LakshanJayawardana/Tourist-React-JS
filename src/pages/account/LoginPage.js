@@ -17,15 +17,17 @@ const LoginPage = ({user}) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (formData.email === user.email && formData.password === user.password) {
-        navigate('/account')
-    } else {
-      alert('Invalid email or password');
-      navigate('/register')
-    }
-  };
+
+ 
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      if (formData.email === user.email && formData.password === user.password) {
+          navigate('/account');
+      } else {
+        alert('Invalid email or password please createa new one');
+        navigate('/register')
+      }
+    };
 
   return (
    <>
@@ -48,7 +50,7 @@ const LoginPage = ({user}) => {
                     name="email"
                     value={email}
                     onChange={handleChange}
-                    placeholder="Enter email"
+                    placeholder="admin@example.com"
                     required
                   />
                 </div>
@@ -64,7 +66,7 @@ const LoginPage = ({user}) => {
                     name="password"
                     value={password}
                     onChange={handleChange}
-                    placeholder="Enter password"
+                    placeholder="admin"
                     required
                   />
                 </div>
