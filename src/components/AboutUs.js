@@ -16,7 +16,7 @@ const AboutUs = () => {
                 </div>
                 <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <h6 className="section-title bg-white text-start text-primary pe-3">About Us</h6>
-                    <h1 className="mb-4">Welcome to <span className="text-primary">DevStudio</span></h1>
+                    <h1 className="mb-4">Welcome to <span className="text-primary">WebWaves Digital</span></h1>
                     <p className="mb-4">We design and build web and mobile products that help businesses grow. Our team combines product thinking, engineering excellence, and modern UX to deliver scalable solutions.</p>
                     <p className="mb-4">From MVPs to enterprise platforms, we partner with organizations to deliver fast, reliable, and maintainable software tailored to real user needs.</p>
                     <div className="row gy-2 gx-4 mb-4">

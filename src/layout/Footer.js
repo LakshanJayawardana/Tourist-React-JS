@@ -11,20 +11,17 @@ const Footer = () => {
             {/* Footer Start */}
             <div className="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
                 <div className="container py-5">
-                    <div className="row g-5">
-                        <div className="col-lg-3 col-md-6">
+                    <div className="row g-5 justify-content-center">
+                        <div className="col-lg-3 col-md-6 text-center">
                             <h4 className="text-white mb-3">Company</h4>
                             <Link className="btn btn-link" to={'/about'}>About Us</Link>
                             <Link className="btn btn-link" to={'/contact'}>Contact Us</Link>
-                            <Link className="btn btn-link" to={'/privacy'}>Privacy Policy</Link>
-                            <Link className="btn btn-link" to={'/terms'}>Terms & Conditions</Link>
-                            <Link className="btn btn-link" to={'/faq'}>FAQs</Link>
                         </div>
-                        <div className="col-lg-3 col-md-6">
+                        <div className="col-lg-3 col-md-6 text-center">
                             <h4 className="text-white mb-3">Contact</h4>
-                            <p className="mb-2"><i className="fa fa-map-marker-alt me-3"></i>123 Tech Park, San Francisco, USA</p>
-                            <p className="mb-2"><i className="fa fa-phone-alt me-3"></i>+1 (415) 555-0123</p>
-                            <p className="mb-2"><i className="fa fa-envelope me-3"></i>hello@devstudio.com</p>
+                            <p className="mb-2"><i className="fa fa-map-marker-alt me-3"></i>Gampaha, Sri Lanka</p>
+                            <p className="mb-2"><i className="fa fa-phone-alt me-3"></i>+94 76 61 42 827</p>
+                            <p className="mb-2"><i className="fa fa-envelope me-3"></i>webwavesdigitalnco@gmail.com</p>
                             <div className="d-flex pt-2">
                                 <Link className="btn btn-outline-light btn-social" to={'/'}><i className="fab fa-twitter"></i></Link>
                                 <Link className="btn btn-outline-light btn-social" to={'/'}><i className="fab fa-facebook-f"></i></Link>
@@ -32,46 +29,17 @@ const Footer = () => {
                                 <Link className="btn btn-outline-light btn-social" to={'/'}><i className="fab fa-linkedin-in"></i></Link>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6">
-                            <h4 className="text-white mb-3">Gallery</h4>
-                            <div className="row g-2 pt-2">
-                                <div className="col-4">
-                                    <img className="img-fluid bg-light p-1" src={package1} alt="" />
-                                </div>
-                                <div className="col-4">
-                                    <img className="img-fluid bg-light p-1" src={package2} alt="" />
-                                </div>
-                                <div className="col-4">
-                                    <img className="img-fluid bg-light p-1" src={package3} alt="" />
-                                </div>
-                                <div className="col-4">
-                                    <img className="img-fluid bg-light p-1" src={package2} alt="" />
-                                </div>
-                                <div className="col-4">
-                                    <img className="img-fluid bg-light p-1" src={package3} alt="" />
-                                </div>
-                                <div className="col-4">
-                                    <img className="img-fluid bg-light p-1" src={package1} alt="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6">
-                            <h4 className="text-white mb-3">Newsletter</h4>
-                            <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                            <div className="position-relative mx-auto mw-400" >
-                                <input className="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" />
-                                <button type="button" className="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                            </div>
-                        </div>
+                        
+                        
                     </div>
                 </div>
                 <div className="container">
                     <div className="copyright">
                         <div className="row">
                             <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                                &copy; <Link className="border-bottom" href="#">DevStudio</Link>, All Right Reserved.
+                                &copy; <Link className="border-bottom" href="#">WebWaves Digital</Link>, All Right Reserved.
 
-                                Designed By <Link className="border-bottom" href="https://nazmul-rdo.netlify.app">Nazmul Hossain</Link>
+                                Designed By <Link className="border-bottom" href="https://www.linkedin.com/in/lakshanjayawardana/">WebWaves Digital</Link>
 
 
 
@@ -87,9 +55,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <h1 className='hire-now-heading'> Hire Now  <Link to="https://cal.com/nazmulrdo" target="_blank" className="consultation-link">
-                Free consultation
-            </Link> </h1>
+                
             </div>
             <Link href="#" className="btn btn-lg btn-primary btn-lg-square back-to-top"><i className="bi bi-arrow-up"></i></Link>
            

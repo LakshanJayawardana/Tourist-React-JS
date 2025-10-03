@@ -18,8 +18,8 @@ const services = [
   },
   {
     icon: 'fa-laptop-code',
-    title: 'A/L ICT Classes',
-    description: 'Structured A/L ICT lessons and exam preparation with practical coding exercises.',
+    title: 'Advanced Level ICT Classes(Edexel/Cambridge & Local) ',
+    description: 'Structured Advanced Level ICT lessons and exam preparation with practical coding exercises.',
   },
 ];
 

@@ -209,6 +209,30 @@
   background-blend-mode: normal;
 }
 
+/* Compact hero adjustments */
+.hero-header {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.hero-header .container {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.hero-header .display-3 {
+  font-size: 2.25rem; /* smaller headline */
+  line-height: 1.1;
+}
+.hero-header .fs-4 {
+  font-size: 1rem;
+}
+.hero-header .position-relative.w-75 {
+  width: 90% !important;
+}
+.hero-header .form-control {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+
 .breadcrumb-item + .breadcrumb-item::before {
   color: rgba(255, 255, 255, .5);
 }
@@ -523,18 +547,39 @@
   object-fit: cover !important;
 }
 
-.btn-primary{
-  background-color: #86B817 !important;
-  border: #86B817;
+/* Primary Button */
+.btn-primary {
+  background-color: #007BFF !important;
+  border: 1px solid #007BFF !important;
+  color: #fff !important;
+  transition: all 0.3s ease;
 }
 
-.text-primary{
-  color: #86B817 !important;
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #0069d9 !important; /* darker blue */
+  border-color: #0062cc !important;
+  color: #fff !important;
 }
 
+/* Primary Text */
+.text-primary {
+  color: #007BFF !important;
+}
+
+/* Headings */
 .hire-now-heading {
   text-align: center;
-  color: #86B817;
+  color: #007BFF;
   padding-bottom: 50px;
+  font-weight: bold;
 }
+
+/* Optional: Links with primary color */
+a.text-primary:hover {
+  color: #0056b3 !important;
+  text-decoration: underline;
+}
+
+
 

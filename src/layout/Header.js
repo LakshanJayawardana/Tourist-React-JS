@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom';
 
 import Topbar from './Topbar';
+import logo from '../img/WebWaves.jpg';
 
 const Header = () => {
 
@@ -31,11 +32,9 @@ const Header = () => {
       
       <div className="container-fluid position-relative p-0">
         <nav className={`navbar navbar-expand-lg navbar-light  px-4 px-lg-5 py-3 py-lg-0 ${isSticky ? 'sticky-top shadow-sm' : ''}`}>
-          <NavLink to="/" className="navbar-brand p-0">
-            <h1 className="text-primary m-0">
-              <i className="fa fa-code me-3"></i>DevStudio
-            </h1>
-            {/* <img src={logo} alt="Logo" /> */}
+          <NavLink to="/" className="navbar-brand p-0 d-flex align-items-center">
+            <img src={logo} alt="WebWaves Digital logo" className="me-2" style={{ width: 40, height: 40, objectFit: 'cover' }} />
+            <h1 className="text-primary m-0">WebWaves Digital</h1>
           </NavLink>
           <button
             className="navbar-toggler"

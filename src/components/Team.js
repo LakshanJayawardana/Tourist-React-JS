@@ -15,7 +15,7 @@ const Team = () => {
             name: 'Lakshan Jayawardana',
             designation: 'Software Engineer',
             imageSrc: team2,
-            socialMedia: { facebook: '#', twitter: '#', linkedin: '#' },
+            socialMedia: { facebook: '#', twitter: '#', linkedin: 'https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile' },
         }
 
     ];
@@ -37,7 +37,9 @@ const Team = () => {
                                 <div className="position-relative d-flex justify-content-center" style={{ marginTop: '-19px' }}>
                                     <a className="btn btn-square mx-1" href={member.socialMedia.facebook}><i className="fab fa-facebook-f"></i></a>
                                     <a className="btn btn-square mx-1" href={member.socialMedia.twitter}><i className="fab fa-twitter"></i></a>
-                                    <a className="btn btn-square mx-1" href={member.socialMedia.instagram}><i className="fab fa-instagram"></i></a>
+                                    <a className="btn btn-square mx-1" href={member.socialMedia.linkedin} target="_blank" rel="noopener noreferrer">
+    <i className="fab fa-linkedin-in"></i>
+  </a>
                                 </div>
                                 <div className="text-center p-4">
                                     <h5 className="mb-0">{member.name}</h5>
