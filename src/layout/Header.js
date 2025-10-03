@@ -84,9 +84,7 @@ const Header = () => {
             </div>
 
 
-            <NavLink to="/account" className="btn btn-primary rounded-pill py-2 px-4">
-              My Account
-            </NavLink>
+            {/* Account removed: My Account button hidden */}
 
 
           </div>

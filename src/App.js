@@ -9,9 +9,7 @@ import Services from './pages/Services';
 import AllPackages from './pages/AllPackages';
 import ContactPage from './pages/ContactPage';
 import Loading from './layout/Loading';
-import Account from './pages/account';
-import LoginPage from './pages/account/LoginPage';
-import RegisterPage from './pages/account/RegisterPage';
+// Account pages removed
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -54,11 +52,7 @@ function App() {
             <Route path="/package" element={<AllPackages />} />
             <Route path="/contact" element={<ContactPage />} />
 
-            <Route path="/account" element={<Account user={user} setUser={setUser} />} />
-
-            <Route path="/login" element={<LoginPage user={user} />} />
-
-            <Route path="/register" element={<RegisterPage setUser={setUser} />} />
+            {/* Account routes removed */}
           </Routes>
 
           <ScrollToTop />

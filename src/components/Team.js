@@ -12,43 +12,27 @@ const Team = () => {
     const teamMembers = [
         {
             name: 'John Doe',
-            designation: 'Tour Guide',
+            designation: 'Software Engineer',
             imageSrc: team1,
-            socialMedia: {
-                facebook: '#',
-                twitter: '#',
-                instagram: '#',
-            },
+            socialMedia: { facebook: '#', twitter: '#', linkedin: '#' },
         },
         {
             name: 'Jane Smith',
-            designation: 'Tour Guide',
+            designation: 'Product Designer',
             imageSrc: team2,
-            socialMedia: {
-                facebook: '#',
-                twitter: '#',
-                instagram: '#',
-            },
+            socialMedia: { facebook: '#', twitter: '#', linkedin: '#' },
         },
         {
             name: 'Bob Johnson',
-            designation: 'Tour Guide',
+            designation: 'Mentor & Technical Lead',
             imageSrc: team3,
-            socialMedia: {
-                facebook: '#',
-                twitter: '#',
-                instagram: '#',
-            },
+            socialMedia: { facebook: '#', twitter: '#', linkedin: '#' },
         },
         {
             name: 'Alice Williams',
-            designation: 'Tour Guide',
+            designation: 'Career Coach',
             imageSrc: team4,
-            socialMedia: {
-                facebook: '#',
-                twitter: '#',
-                instagram: '#',
-            },
+            socialMedia: { facebook: '#', twitter: '#', linkedin: '#' },
         },
     ];
 
@@ -56,8 +40,8 @@ const Team = () => {
         <div className="container-xxl py-5">
             <div className="container">
                 <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 className="section-title bg-white text-center text-primary px-3">Travel Guide</h6>
-                    <h1 className="mb-5">Meet Our Guide</h1>
+                    <h6 className="section-title bg-white text-center text-primary px-3">Team</h6>
+                    <h1 className="mb-5">Meet Our Team</h1>
                 </div>
                 <div className="row g-4">
                     {teamMembers.map((member, index) => (

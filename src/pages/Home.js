@@ -11,11 +11,11 @@ import HeroHeader from '../layout/HeroHeader';
 const Home = () => {
     return (
         <>
-            <HeroHeader title={'Enjoy Your Vacation With Us'} dese={'Tempor erat elitr rebum at clita diam amet diam et eos erat ipsum lorem sit'}/>
+            <HeroHeader title={'Build Better Products with DevStudio'} dese={'We help startups and teams ship well-crafted software — from discovery and design to engineering and launch.'}/>
             <AboutUs />
             <OurServices />
-            <Destination />
             <Packages />
+            <Destination />
             <Booking />
             <Team />
         </>
