@@ -2,44 +2,24 @@ import React from 'react';
 
 const services = [
   {
-    icon: 'fa-globe',
-    title: 'WorldWide Tours',
-    description: 'Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam',
+    icon: 'fa-file-alt',
+    title: 'CV Review',
+    description: 'Professional CV review and optimization to improve interview conversion and highlight your strengths.',
   },
   {
-    icon: 'fa-hotel',
-    title: 'Hotel Reservation',
-    description: 'Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam',
+    icon: 'fa-chalkboard-teacher',
+    title: 'Mentorship',
+    description: 'One-on-one mentorship to accelerate your learning, career projects, and technical growth.',
   },
   {
-    icon: 'fa-user',
-    title: 'Travel Guides',
-    description: 'Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam',
+    icon: 'fa-briefcase',
+    title: 'Career Guidance',
+    description: 'Personalized career planning, interview preparation and role-targeting strategies.',
   },
   {
-    icon: 'fa-cog',
-    title: 'Event Management',
-    description: 'Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam',
-  },
-  {
-    icon: 'fa-globe',
-    title: 'WorldWide Tours',
-    description: 'Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam',
-  },
-  {
-    icon: 'fa-hotel',
-    title: 'Hotel Reservation',
-    description: 'Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam',
-  },
-  {
-    icon: 'fa-user',
-    title: 'Travel Guides',
-    description: 'Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam',
-  },
-  {
-    icon: 'fa-cog',
-    title: 'Event Management',
-    description: 'Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam',
+    icon: 'fa-laptop-code',
+    title: 'A/L ICT Classes',
+    description: 'Structured A/L ICT lessons and exam preparation with practical coding exercises.',
   },
 ];
 

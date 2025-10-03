@@ -33,7 +33,7 @@ const Header = () => {
         <nav className={`navbar navbar-expand-lg navbar-light  px-4 px-lg-5 py-3 py-lg-0 ${isSticky ? 'sticky-top shadow-sm' : ''}`}>
           <NavLink to="/" className="navbar-brand p-0">
             <h1 className="text-primary m-0">
-              <i className="fa fa-map-marker-alt me-3"></i>Tourist
+              <i className="fa fa-code me-3"></i>DevStudio
             </h1>
             {/* <img src={logo} alt="Logo" /> */}
           </NavLink>
@@ -57,7 +57,7 @@ const Header = () => {
                 Services
               </NavLink>
               <NavLink to="/package" activeClassName="active-nav-item" className="nav-item nav-link">
-                Packages
+                Products
               </NavLink>
               {/* <div className="nav-item dropdown">
                   <NavLink to="/d" activeClassName="active-nav-item" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">

@@ -16,27 +16,27 @@ const AboutUs = () => {
                 </div>
                 <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <h6 className="section-title bg-white text-start text-primary pe-3">About Us</h6>
-                    <h1 className="mb-4">Welcome to <span className="text-primary">Tourist</span></h1>
-                    <p className="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    <p className="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <h1 className="mb-4">Welcome to <span className="text-primary">DevStudio</span></h1>
+                    <p className="mb-4">We design and build web and mobile products that help businesses grow. Our team combines product thinking, engineering excellence, and modern UX to deliver scalable solutions.</p>
+                    <p className="mb-4">From MVPs to enterprise platforms, we partner with organizations to deliver fast, reliable, and maintainable software tailored to real user needs.</p>
                     <div className="row gy-2 gx-4 mb-4">
                         <div className="col-sm-6">
-                            <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2"></i>First Class Flights</p>
+                            <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2"></i>Product strategy & discovery</p>
                         </div>
                         <div className="col-sm-6">
-                            <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2"></i>Handpicked Hotels</p>
+                            <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2"></i>Custom web & mobile apps</p>
                         </div>
                         <div className="col-sm-6">
-                            <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2"></i>5 Star Accommodations</p>
+                            <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2"></i>Cloud & DevOps</p>
                         </div>
                         <div className="col-sm-6">
-                            <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2"></i>Latest Model Vehicles</p>
+                            <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2"></i>UI/UX design</p>
                         </div>
                         <div className="col-sm-6">
-                            <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2"></i>150 Premium City Tours</p>
+                            <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2"></i>Scalable architecture</p>
                         </div>
                         <div className="col-sm-6">
-                            <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2"></i>24/7 Service</p>
+                            <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2"></i>Ongoing support & maintenance</p>
                         </div>
                     </div>
                     <Link className="btn btn-primary py-3 px-5 mt-2" to={'/about'}>Read More</Link>

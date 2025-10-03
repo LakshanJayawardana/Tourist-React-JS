@@ -14,17 +14,17 @@ const Footer = () => {
                     <div className="row g-5">
                         <div className="col-lg-3 col-md-6">
                             <h4 className="text-white mb-3">Company</h4>
-                            <Link className="btn btn-link" to={'/'}>About Us</Link>
-                            <Link className="btn btn-link" to={'/'}>Contact Us</Link>
-                            <Link className="btn btn-link" to={'/'}>Privacy Policy</Link>
-                            <Link className="btn btn-link" to={'/'}>Terms & Condition</Link>
-                            <Link className="btn btn-link" to={'/'}>FAQs & Help</Link>
+                            <Link className="btn btn-link" to={'/about'}>About Us</Link>
+                            <Link className="btn btn-link" to={'/contact'}>Contact Us</Link>
+                            <Link className="btn btn-link" to={'/privacy'}>Privacy Policy</Link>
+                            <Link className="btn btn-link" to={'/terms'}>Terms & Conditions</Link>
+                            <Link className="btn btn-link" to={'/faq'}>FAQs</Link>
                         </div>
                         <div className="col-lg-3 col-md-6">
                             <h4 className="text-white mb-3">Contact</h4>
-                            <p className="mb-2"><i className="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                            <p className="mb-2"><i className="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                            <p className="mb-2"><i className="fa fa-envelope me-3"></i>info@example.com</p>
+                            <p className="mb-2"><i className="fa fa-map-marker-alt me-3"></i>123 Tech Park, San Francisco, USA</p>
+                            <p className="mb-2"><i className="fa fa-phone-alt me-3"></i>+1 (415) 555-0123</p>
+                            <p className="mb-2"><i className="fa fa-envelope me-3"></i>hello@devstudio.com</p>
                             <div className="d-flex pt-2">
                                 <Link className="btn btn-outline-light btn-social" to={'/'}><i className="fab fa-twitter"></i></Link>
                                 <Link className="btn btn-outline-light btn-social" to={'/'}><i className="fab fa-facebook-f"></i></Link>
@@ -69,7 +69,7 @@ const Footer = () => {
                     <div className="copyright">
                         <div className="row">
                             <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                                &copy; <Link className="border-bottom" href="#">Tourist BD</Link>, All Right Reserved.
+                                &copy; <Link className="border-bottom" href="#">DevStudio</Link>, All Right Reserved.
 
                                 Designed By <Link className="border-bottom" href="https://nazmul-rdo.netlify.app">Nazmul Hossain</Link>
 

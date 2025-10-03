@@ -8,8 +8,8 @@ const Booking = () => {
         <div className="booking p-5">
           <div className="row g-5 align-items-center">
             <div className="col-md-6 text-white">
-              <h6 className="text-white text-uppercase">Booking</h6>
-              <h1 className="text-white mb-4">Online Booking</h1>
+              <h6 className="text-white text-uppercase">Get in touch</h6>
+              <h1 className="text-white mb-4">Request a Consultation</h1>
               <p className="mb-4">
                 Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat
                 ipsum et lorem et sit.
@@ -23,7 +23,7 @@ const Booking = () => {
               </Link>
             </div>
             <div className="col-md-6">
-              <h1 className="text-white mb-4">Book A Tour</h1>
+              <h1 className="text-white mb-4">Tell us about your project</h1>
               <form>
                 <div className="row g-3">
                   <div className="col-md-6">
@@ -54,11 +54,13 @@ const Booking = () => {
                   <div className="col-md-6">
                     <div className="form-floating">
                       <select className="form-select" id="select1">
-                        <option value="1">Dhaka</option>
-                        <option value="2">Cox's Bazar</option>
-                        <option value="3">Sundarbans</option>
+                        <option value="1">Web Application</option>
+                        <option value="2">Mobile Application</option>
+                        <option value="3">API / Integrations</option>
+                        <option value="4">Design / UX</option>
+                        <option value="5">Other</option>
                       </select>
-                      <label htmlFor="select1">Select a place</label>
+                      <label htmlFor="select1">Service Required</label>
                     </div>
                   </div>
                   <div className="col-12">
@@ -73,8 +75,8 @@ const Booking = () => {
                     </div>
                   </div>
                   <div className="col-12">
-                    <button className="btn btn-outline-light w-100 py-3" type="submit">
-                      Book Now
+                      <button className="btn btn-outline-light w-100 py-3" type="submit">
+                      Request Consultation
                     </button>
                   </div>
                 </div>
