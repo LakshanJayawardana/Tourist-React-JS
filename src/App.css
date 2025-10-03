@@ -112,11 +112,11 @@
   position: relative;
   margin-right: 25px;
   padding: 35px 0;
-  color: #FFFFFF !important;
+  color: var(--dark) !important; /* dark text on light theme */
   font-size: 18px;
   font-weight: 600;
   outline: none;
-  transition: .5s;
+  transition: .25s;
 }
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
@@ -126,7 +126,10 @@
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-  color: var(--primary) !important;
+  color: var(--button-text) !important;
+  background-color: var(--button-bg);
+  border-radius: 6px;
+  padding: 30px 10px;
 }
 
 .navbar-light .navbar-brand img {
@@ -177,20 +180,20 @@
   }
 
   .navbar-light .navbar-nav .nav-link::before {
-      position: absolute;
-      content: "";
-      width: 0;
-      height: 2px;
-      bottom: -1px;
-      left: 50%;
-      background: var(--primary);
-      transition: .5s;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    bottom: -1px;
+    left: 50%;
+    background: var(--button-bg);
+    transition: .25s;
   }
 
   .navbar-light .navbar-nav .nav-link:hover::before,
   .navbar-light .navbar-nav .nav-link.active::before {
-      width: calc(100% - 2px);
-      left: 1px;
+    width: calc(100% - 2px);
+    left: 1px;
   }
 
   .navbar-light .navbar-nav .nav-link.nav-contact::before {

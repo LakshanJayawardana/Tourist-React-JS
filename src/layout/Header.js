@@ -56,9 +56,9 @@ const Header = () => {
               <NavLink to="/service" activeClassName="active-nav-item" className="nav-item nav-link">
                 Services
               </NavLink>
-              <NavLink to="/package" activeClassName="active-nav-item" className="nav-item nav-link">
+              {/*<NavLink to="/package" activeClassName="active-nav-item" className="nav-item nav-link">
                 Products
-              </NavLink>
+              </NavLink>*/}
               {/* <div className="nav-item dropdown">
                   <NavLink to="/d" activeClassName="active-nav-item" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                     Pages

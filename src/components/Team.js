@@ -10,30 +10,14 @@ import team4 from '../img/team-4.jpg'
 
 const Team = () => {
     const teamMembers = [
+
         {
-            name: 'John Doe',
+            name: 'Lakshan Jayawardana',
             designation: 'Software Engineer',
-            imageSrc: team1,
-            socialMedia: { facebook: '#', twitter: '#', linkedin: '#' },
-        },
-        {
-            name: 'Jane Smith',
-            designation: 'Product Designer',
             imageSrc: team2,
             socialMedia: { facebook: '#', twitter: '#', linkedin: '#' },
-        },
-        {
-            name: 'Bob Johnson',
-            designation: 'Mentor & Technical Lead',
-            imageSrc: team3,
-            socialMedia: { facebook: '#', twitter: '#', linkedin: '#' },
-        },
-        {
-            name: 'Alice Williams',
-            designation: 'Career Coach',
-            imageSrc: team4,
-            socialMedia: { facebook: '#', twitter: '#', linkedin: '#' },
-        },
+        }
+
     ];
 
     return (
@@ -43,7 +27,7 @@ const Team = () => {
                     <h6 className="section-title bg-white text-center text-primary px-3">Team</h6>
                     <h1 className="mb-5">Meet Our Team</h1>
                 </div>
-                <div className="row g-4">
+                <div className="row g-4 justify-content-center">
                     {teamMembers.map((member, index) => (
                         <div key={index} className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay={0.1 + 0.2 * index + 's'}>
                             <div className="team-item">
